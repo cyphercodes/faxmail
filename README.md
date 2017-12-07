@@ -283,7 +283,8 @@ faxmail   unix  -       n       n       -       1       pipe
 transport_maps = regexp:/etc/postfix/transport.reg
 ```
 
-In main.cf I also had to add the below to get it to work:
+In `/etc/postfix/main.cf` I also had to add the below to get it to work:
+
 ```ini
 propagate_unmatched_extensions = canonical, virtual, alias
 
